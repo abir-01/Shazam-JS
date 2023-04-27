@@ -16,10 +16,10 @@ const App = () => {
         <div className="d-flex flex-column col-xs-12 col-sm-10">
           <Main_Header />
           <Routes>
-            <Route path="/" element={[<Featured />, <Recommended />]} />
-            <Route path="/search" element={<Search/>} />
-            <Route path="/favourites" element={<Favourites/>} />
-            <Route path="/playlists" element={<Playlist/>} />
+            <Route exact path="/" element={[<Featured />, <Recommended />]} />
+            <Route exact path="/search" element={<Search/>} />
+            <Route exact path="/favourites" element={<Favourites/>} />
+            <Route exact path="/playlists" element={<Playlist/>} />
           </Routes>
 
           
