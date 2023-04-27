@@ -7,9 +7,12 @@ const addRemovePlaylists = (state = initialState1, action) => {
         case 'REMOVEFROMPLAYLIST':
         case 'ADDPLAYLIST':
             const arr = { files: [], title: action.title }
-            state.push(arr)
-            console.log(state)
+            const list1 = [...state]
+            list1.push(arr)
+            state=list1
             return state
+            console.log(state)
+            
         case 'REMOVEPLAYLIST':
             const list = [...state]
             list.splice(action.id, 1)

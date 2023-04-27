@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { addToPlaylist, removeFromPlaylist, addPlaylist, removePlaylist } from '../../actions/index' 
 
 const PlaylistList = ({ songs, id }) => {
-console.log("playlistlist + ",songs)
+// console.log("playlistlist + ",songs)
     const dispatch = useDispatch();
 
     return (

@@ -8,15 +8,18 @@ import { addToPlaylist, removeFromPlaylist, addPlaylist, removePlaylist } from '
 
 const Playlist = () => {
 
+  const dispatch = useDispatch();
+  const myState = useSelector((state) => state.addRemovePlaylists)
+
   const [name, setname] = useState('')
 
   const handleInputChange = useCallback((e) => {
-
+    
     setname(e.target.value)
   })
   const handleOnClick = useCallback((e) => {
 
-    e.preventDefault()
+    // e.preventDefault()
     console.log(name)
     dispatch(addPlaylist(music, name))
 
@@ -24,8 +27,7 @@ const Playlist = () => {
   }
   )
 
-  const dispatch = useDispatch();
-  const myState = useSelector((state) => state.addRemovePlaylists)
+
 
   return (
     <>
@@ -50,9 +52,9 @@ const Playlist = () => {
                 </button>
               </div>
               <div className="modal-body">
-                <form action="/action_page.php">
+                <form action="/action_page.php" >
                   <label htmlFor="fname">Name:</label>
-                  <input type="text" id="fname" name="fname" style={{ marginLeft: '1rem', border: '2px solid black ', borderRadius: '2rem', paddingInline: '1rem' }} onChange={handleInputChange} /><br /><br />
+                  <input type="text" id="fname" name="fname" style={{ marginLeft: '1rem', border: '2px solid black ', borderRadius: '2rem', paddingInline: '1rem' }} value={name} onChange={handleInputChange} /><br /><br />
                 </form>
               </div>
               <div className="modal-footer">
@@ -66,9 +68,9 @@ const Playlist = () => {
 
 
       <div className="p-4">
-
-        <div className="d-flex flex-wrap favs">
+        <div className="d-flex flex-wrap ">
           {myState.map((fav, i) => (
+            // console.log(fav),
             <PlaylistList songs={fav} id={i} />
           ))
           }
