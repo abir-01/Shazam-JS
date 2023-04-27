@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const sidebar = () => {
     return (
         <>
-            <div className="col-xs-0 col-sm-2 bg-primary text-light 
+            <div className="col-xs-0 col-sm-2 bg-primary text-light position-fixed
              d-flex flex-column justify-content-center" style={{ height: '100vh', paddingInline:'4vw'}}>
                 <div>
                     <div className='my-3'>
