@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+
 import { useSelector, useDispatch } from 'react-redux'
 import music from '../../assets/music.jpg'
 import FavouriteList from './FavouriteList'

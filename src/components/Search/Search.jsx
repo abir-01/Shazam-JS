@@ -39,46 +39,22 @@ const Search = () => {
             setSearchResultsTracks(response.data.tracks.hits)
           setSearchResultsArtists(response.data.artists.hits)
         })
-    // }
-    // )
-
-
-
 
   }, [query])
-
-
-
-
-
-
-
-
-
-
-
+  
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    // onTextChange(text1)
+ 
     console.log(text1);
     setquery(text1);
     console.log('query=' + query)
-    // search();
+  
   })
 
   const handleInputChange = useCallback((e) => {
-    // onTextChange(e.target.value)
+
     settext1(e.target.value)
   })
-
-  // const handleChange = (event) => {
-  //   setQuery(event.target.value);
-  // };
-
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   search();
-  // };
 
   return (
     <>

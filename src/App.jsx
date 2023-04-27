@@ -16,12 +16,12 @@ const App = () => {
         <div className="d-flex flex-column col-xs-12 col-sm-10 position-absolute" style={{right:'0'}}>
           
           <Routes>
-            <Route exact path="/" element={[
+            <Route exact path="/Shazam-JS/" element={[
               <Main_Header />,<Featured />, <Recommended />
             ]} />
-            <Route exact path="/search" element={<Search/>} />
-            <Route exact path="/favourites" element={<Favourites/>} />
-            <Route exact path="/playlists" element={<Playlist/>} />
+            <Route exact path="/Shazam-JS/search" element={<Search/>} />
+            <Route exact path="/Shazam-JS/favourites" element={<Favourites/>} />
+            <Route exact path="/Shazam-JS/playlists" element={<Playlist/>} />
           </Routes>
 
           

@@ -1,11 +1,10 @@
 import React from 'react'
 import music from '../../assets/music.jpg'
 import {  removeFav } from "../../actions/index"
-import { useSelector, useDispatch } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 
-const FavouriteList = ({ song ,id}) => {
-    
-    const myState = useSelector((state) => state.addRemoveFavourite)
+const FavouriteList = ({ song ,id}) => {   
+
     const dispatch = useDispatch();
 
     return (

@@ -4,8 +4,6 @@ const FeaturedList = ({song}) => {
     return (
         <div className="flex justify-center p-2 mx-auto" >
            
-            
-           
             <div className="card" style={{ width: "16rem", border: 'none', textAlign: 'center' }}>
                 <img src={song.track.images.coverart} className="card-img-top" alt="..." />
                 <div className="card-body">

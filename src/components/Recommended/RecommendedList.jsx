@@ -2,7 +2,7 @@ import React from 'react'
 import music from '../../assets/music.jpg'
 
 const RecommendedList = ({ song }) => {
-    // { console.log(song) }
+    
     return (
          <div className="flex justify-center p-2 mx-auto" >
 
