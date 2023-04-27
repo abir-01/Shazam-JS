@@ -66,9 +66,10 @@ const Search = () => {
               <div className="search  sm:px-4 md:px-6 py-4 my-2">
                 <SearchIcon />
               </div>
-              <input type="text" style={{ fontSize: '1.5rem' }} onChange={handleInputChange}
+              <input type="text" style={{ fontSize: '1.5rem',maxWidth:'80%'}} onChange={handleInputChange}
 
-                placeholder="Enter your search here" className=" focus:ring-0 outline-none border-none flex-1  py-4 px-0 text-gray-700 " />
+                placeholder="Enter your search here" className="
+                rounded-full focus:ring-0 outline-none border-none flex-1  py-4 px-0 text-gray-700 " />
             </form>
             <div className="glow glow-1 z-10 bg-pink-400 absolute" />
             <div className="glow glow-2 z-20 bg-purple-400 absolute" />

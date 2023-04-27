@@ -10,8 +10,8 @@ const Favourites = () => {
   
   return (
 
-    <div className="px-4">
-      <h5 style={{ opacity: '0.7' }}> Search Tracks <hr /></h5>
+    <div className="p-4">
+      <h5 style={{ opacity: '0.7' }}> Favourite Tracks <hr /></h5>
       <div className="d-flex flex-wrap favs">
         {myState.map((fav, i) => (
           console.log(fav),

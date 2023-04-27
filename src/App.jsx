@@ -11,9 +11,12 @@ import Playlist from './components/Playlist'
 const App = () => {
   return (
     <BrowserRouter >
-      <div className="d-flex">
+      <div style={{}}>
+
         <Sidebar />
-        <div className="d-flex flex-column col-xs-12 col-sm-10 position-absolute" style={{right:'0'}}>
+      </div>
+        
+        <div className="d-flex flex-column position-absolute" style={{right:'0',width:'80%'}}>
           
           <Routes>
             <Route exact path="/Shazam-JS/" element={[
@@ -28,7 +31,7 @@ const App = () => {
           
          </div>
 
-      </div>
+      
     </BrowserRouter>
       
     
