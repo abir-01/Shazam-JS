@@ -6,7 +6,7 @@ import Recommended from './components/Recommended/Recommended'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Search from './components/Search/Search'
 import Favourites from './components/Favourites/Favourites'
-import Playlist from './components/Playlist'
+import Playlist from './components/Playlist/Playlist'
 
 const App = () => {
   return (

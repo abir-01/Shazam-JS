@@ -17,3 +17,28 @@ export const removeFav = (image, title, url,id) => {
         id:id
     }
 }
+
+export const addToPlaylist = () => {
+    return {
+        type: "ADDTOPLAYLIST",
+    }
+}
+export const removeFromPlaylist = () => {
+    return {
+        type: "REMOVEFROMPLAYLIST",
+    }
+}
+export const addPlaylist = (image,title) => {
+    return {
+        type: "ADDPLAYLIST",
+        image: image,
+        title:title
+        
+    }
+}
+export const removePlaylist = (id) => {
+    return {
+        type: "REMOVEPLAYLIST",
+        id:id
+    }
+}
