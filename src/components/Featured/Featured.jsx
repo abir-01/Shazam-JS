@@ -12,7 +12,7 @@ const Featured = () => {
         method: 'GET',
         headers: {
             //'content-type': 'application/json',
-            'X-RapidAPI-Key': '6988e49059msha2951b4d751574ep10dd7cjsnf1f73d3e7297',
+            'X-RapidAPI-Key': 'a4ae74290bmshb62fcdd79723458p13e868jsn0445ec2e435e',
             'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
         }
     };
